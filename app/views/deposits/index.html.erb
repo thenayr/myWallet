@@ -1,12 +1,14 @@
-<% title "Deposits" %>
-<div id="deposits">
+<% title "Deposits", false %>
+
+
+<div id="deposits">	
 <%= render @deposits %>
 </div>
 
 
 
-<h3>Add a new transaction</h3>
-
+<a href="#" class="safe add icon button" id="show_form">Add a transaction</a>
+<div id="dep_form">
 <%= form_for Deposit.new, :remote => true do |f| %>
 	<%= f.error_messages %>
 	<p>
@@ -23,3 +25,4 @@
 		</p>
 		<p><%= pill_safe_button_submit_tag %></p>
 <% end %>
+</div>

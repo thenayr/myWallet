@@ -8,6 +8,22 @@
     <%= yield(:head) %>
   </head>
   <body>
+	<div class="topbar">
+	      <div class="topbar-inner">
+	        <div class="container">
+	          <a class="brand" href="#"><%= current_user.username %>'s Dashboard</a>
+	          <ul class="nav">
+	            <li class="active"><a href="#overview">Overview</a></li>
+	            <li><a href="#about">Deposits</a></li>
+	            <li><a href="#grid-system">Expenses</a></li>
+	          </ul>
+			  <div class="nav secondary-nav">
+				<a href="#">Total funds:</a>
+			  </div>
+	        </div>
+	      </div>
+	    </div>
+	
     <div id="container">
       <% flash.each do |name, msg| %>
         <%= content_tag :div, msg, :id => "flash_#{name}" %>
