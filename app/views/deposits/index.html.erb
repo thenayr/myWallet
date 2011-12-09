@@ -1,0 +1,24 @@
+<div id="transactions">
+<%= render @deposits %>
+</div>
+
+
+
+<h3>Add a new transaction</h3>
+
+<%= form_for Deposit.new, :remote => true do |f| %>
+	<%= f.error_messages %>
+	<p>
+		<%= f.label :amount %><br />
+		<%= f.text_field :amount %>
+		</p>
+		<p>
+		<%= f.label :category %><br />
+		<%= f.select_tag(:category, options_for_select([['One', 1], ['Two', 2]]))%>
+		</p>
+		<p>
+		<%= f.label :description, "Description" %><br />
+		<%= f.text_area :description, :rows => '12', :cols => 35 %>
+		</p>
+		<p><%= pill_safe_button_submit_tag %></p>
+<% end %>

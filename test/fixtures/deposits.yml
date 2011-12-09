@@ -1,0 +1,9 @@
+one:
+  description: MyString
+  category: MyString
+  amount: 1
+
+two:
+  description: MyString
+  category: MyString
+  amount: 1
