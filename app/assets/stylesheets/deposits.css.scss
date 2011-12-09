@@ -1,0 +1,68 @@
+// Place all the styles related to the deposits controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.deposit{
+width: 270px;
+margin: 5px;
+float: left;
+overflow: hidden;
+position: relative;
+color: #222;
+-webkit-border-radius: 1.2em;
+-moz-border-radius: 1.2em;
+border-radius: 1.2em;
+background-color: #4f5661;
+background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(79, 86, 97)), to(rgb(42, 49, 57)));
+background-image: -webkit-linear-gradient(top, rgb(79, 86, 97), rgb(42, 49, 57));
+background-image: -moz-linear-gradient(top, rgb(79, 86, 97), rgb(42, 49, 57));
+background-image: -o-linear-gradient(top, rgb(79, 86, 97), rgb(42, 49, 57));
+background-image: -ms-linear-gradient(top, rgb(79, 86, 97), rgb(42, 49, 57));
+background-image: linear-gradient(top, rgb(79, 86, 97), rgb(42, 49, 57));
+filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#4f5661', EndColorStr='#2a3139');
+}
+#deposit_top {
+padding:15px 15px 0 15px;
+border-top-left-radius:1.2em;
+border-top-right-radius:1.2em;
+height:33px;
+background-color: #b3d53f;
+background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(179, 213, 63)), to(rgb(123, 161, 1)));
+background-image: -webkit-linear-gradient(top, rgb(179, 213, 63), rgb(123, 161, 1));
+background-image: -moz-linear-gradient(top, rgb(179, 213, 63), rgb(123, 161, 1));
+background-image: -o-linear-gradient(top, rgb(179, 213, 63), rgb(123, 161, 1));
+background-image: -ms-linear-gradient(top, rgb(179, 213, 63), rgb(123, 161, 1));
+background-image: linear-gradient(top, rgb(179, 213, 63), rgb(123, 161, 1));
+filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#b3d53f', EndColorStr='#7ba101');
+
+
+}
+#deposit_desc {
+padding:15px;
+height:70px;
+background-color: #dce1d1;
+background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(220, 225, 209)), to(rgb(216, 218, 231)));
+background-image: -webkit-linear-gradient(top, rgb(220, 225, 209), rgb(216, 218, 231));
+background-image: -moz-linear-gradient(top, rgb(220, 225, 209), rgb(216, 218, 231));
+background-image: -o-linear-gradient(top, rgb(220, 225, 209), rgb(216, 218, 231));
+background-image: -ms-linear-gradient(top, rgb(220, 225, 209), rgb(216, 218, 231));
+background-image: linear-gradient(top, rgb(220, 225, 209), rgb(216, 218, 231));
+filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#dce1d1', EndColorStr='#d8dae7');
+border-bottom-left-radius:.7em;
+border-bottom-right-radius:.7em;
+border-bottom:1px solid #666d78;
+box-shadow:0px 1px 0px #454d59;
+}
+#deposit_bottom {
+
+height:45px;
+border-bottom-left-radius:1.2em;
+border-bottom-right-radius:1.2em;
+padding:5px;
+}
+.deposit h1 {
+color:#fefefc;
+font-size:17px;
+text-shadow:0px 1px 0px #86a106;
+font-family:arial;
+font-weight:bold;
+}

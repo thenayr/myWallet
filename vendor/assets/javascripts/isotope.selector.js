@@ -1,6 +1,6 @@
 $(function(){
-	var $container = $('#comments');
+	var $container = $('#deposits');
 	$container.isotope({
-		itemSelector: '.comment'
+		itemSelector: '.deposit'
 	});
 });

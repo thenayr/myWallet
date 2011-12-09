@@ -1,4 +1,4 @@
-<div id="transactions">
+<div id="deposits">
 <%= render @deposits %>
 </div>
 
@@ -14,7 +14,7 @@
 		</p>
 		<p>
 		<%= f.label :category %><br />
-		<%= f.select_tag(:category, options_for_select([['One', 1], ['Two', 2]]))%>
+		<%= f.select(:category, options_for_select([['Restaurants', 1], ['Groceries', 2],['Work Expenses', 3],['Entertainment', 4],['Paychecks', 5],['Rent', 6],['Utilities', 7]]))%>
 		</p>
 		<p>
 		<%= f.label :description, "Description" %><br />
