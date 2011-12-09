@@ -1,12 +1,10 @@
 <div id=<%= dom_id(deposit) %> class="deposit">
-	<div id="deposit_top"><h1><%= deposit.description %></h1></div>
+	<div id="deposit_top">
+	<div id="deposit_cat"><h1><%= deposit.category %></h1></div>
+	<div id="deposit_amnt"><%= number_to_currency(deposit.amount) %></div>
+	</div>
 	<div id="deposit_desc">
-	
-	<% if deposit.category == "Restaurants"%>
-	<p>Yes this is a 1</p>
-	<% else %>
-	<p>Not a 1</p>
-	<% end %>
+	<%= deposit.description %>
 	</div>
 	<div id="deposit_bottom">
 	<%= danger_trash_button_link_to "Remove", deposit, :method => :delete, :remote => true %>

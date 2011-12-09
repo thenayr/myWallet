@@ -59,6 +59,18 @@ border-bottom-left-radius:1.2em;
 border-bottom-right-radius:1.2em;
 padding:5px;
 }
+#deposit_cat {
+float:left;
+}
+#deposit_amnt{
+float:right;
+font-family:helvetica;
+font-size:25px;
+margin-top: -7px;
+font-weight:bold;
+color: #698928;
+text-shadow: rgba(0,0,0,0.4) -1px 0, rgba(0,0,0,0.3) 0 -1px, rgba(255,255,255,0.1) 0 1px, rgba(0,0,0,0.3) -1px 0px;
+}
 .deposit h1 {
 color:#fefefc;
 font-size:17px;
