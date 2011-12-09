@@ -35,3 +35,4 @@ gem 'jquery-rails'
 # gem 'ruby-debug'
 
 gem "mocha", :group => :test
+gem "bcrypt-ruby", :require => "bcrypt"

@@ -1,4 +1,5 @@
 class DepositsController < ApplicationController
+  before_filter :login_required
   respond_to :html, :js
   def index
     @deposits = Deposit.all
