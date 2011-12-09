@@ -9,14 +9,17 @@ gem 'sqlite3'
 
 gem 'json'
 
+gem "nifty-generators"
+
+gem 'css3buttons', :git => 'git://github.com/johnrees/css3buttons_rails_helpers.git'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
   gem 'sass-rails',   '~> 3.1.5'
-  gem 'coffee-rails', '~> 3.1.1'
-  gem 'uglifier', '>= 1.0.3'
 end
-
+gem 'coffee-rails', '~> 3.1.1'
+gem 'uglifier', '>= 1.0.3'
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
