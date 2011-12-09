@@ -18,11 +18,13 @@
 			  My Wallet
 			  <% end %>
 			  </a>
+			  <% if logged_in? %>
 	          <ul class="nav">
 	            <li class="active"><%= link_to "Overview", overview_path %></li>
 	            <li><a href="#about">Deposits</a></li>
 	            <li><a href="#grid-system">Expenses</a></li>
 	          </ul>
+			  <% end %>
 			  
 				<ul class="nav secondary-nav">
 				<li><a href="#">Total funds:</a></li>

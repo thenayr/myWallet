@@ -2,7 +2,11 @@ class UsersController < ApplicationController
   before_filter :login_required, :except => [:new, :create]
 
   def new
+    if logged_in?
+      redirect_to overview_url
+    else
     @user = User.new
+    end
   end
 
   def create
