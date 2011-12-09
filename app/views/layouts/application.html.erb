@@ -11,15 +11,27 @@
 	<div class="topbar">
 	      <div class="topbar-inner">
 	        <div class="container">
-	          <a class="brand" href="#"><%= current_user.username %>'s Dashboard</a>
+	          <a class="brand" href="#">
+ 	          <% if logged_in? %>
+			  <%= current_user.username %>'s Dashboard
+			  <% else %>
+			  My Wallet
+			  <% end %>
+			  </a>
 	          <ul class="nav">
 	            <li class="active"><a href="#overview">Overview</a></li>
 	            <li><a href="#about">Deposits</a></li>
 	            <li><a href="#grid-system">Expenses</a></li>
 	          </ul>
-			  <div class="nav secondary-nav">
-				<a href="#">Total funds:</a>
-			  </div>
+			  
+				<ul class="nav secondary-nav">
+				<li><a href="#">Total funds:</a></li>
+				<% if logged_in? %>
+			    <li><%= link_to "Log out", logout_path %></li>
+			    <% else %>
+				<li><%= link_to "Log in", login_path %></li>
+				<% end %>
+			    </ul>
 	        </div>
 	      </div>
 	    </div>
