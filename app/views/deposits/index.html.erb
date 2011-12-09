@@ -7,22 +7,33 @@
 
 
 
-<a href="#" class="safe add icon button" id="show_form">Add a transaction</a>
-<div id="dep_form">
-<%= form_for Deposit.new, :remote => true do |f| %>
-	<%= f.error_messages %>
-	<p>
-		<%= f.label :amount %><br />
-		<%= f.text_field :amount %>
-		</p>
-		<p>
-		<%= f.label :category %><br />
-		<%= f.select(:category, options_for_select([['Restaurants'], ['Groceries'],['Work Expenses'],['Entertainment'],['Paychecks'],['Rent'],['Utilities']]))%>
-		</p>
-		<p>
-		<%= f.label :description, "Description" %><br />
-		<%= f.text_area :description, :rows => '12', :cols => 35 %>
-		</p>
-		<p><%= pill_safe_button_submit_tag %></p>
-<% end %>
-</div>
+<a href="#" class="safe add icon button btn" data-controls-modal="modal_here" id="show_form" data-backdrop="true">Add a transaction</a>
+<!-- Modal -->
+        <div id="modal_here" class="modal hide fade" style="display:none;">
+          <div class="modal-header">
+            <a href="#" class="close">&times;</a>
+            <h3>Add a new transaction</h3>
+          </div>
+          <div class="modal-body">
+            <div id="dep_form">
+			<%= form_for Deposit.new, :remote => true do |f| %>
+				<%= f.error_messages %>
+				<p>
+					<%= f.label :amount %><br />
+					<%= f.text_field :amount %>
+					</p>
+					<p>
+					<%= f.label :category %><br />
+					<%= f.select(:category, options_for_select([['Restaurants'], ['Groceries'],['Work Expenses'],['Entertainment'],['Paychecks'],['Rent'],['Utilities']]))%>
+					</p>
+					<p>
+					<%= f.label :description, "Description" %><br />
+					<%= f.text_area :description, :rows => '12', :cols => 35 %>
+					</p>
+			</div>
+          </div>
+          <div class="modal-footer">
+			<p><%= pill_safe_button_submit_tag %></p>
+			<% end %>
+          </div>
+        </div>

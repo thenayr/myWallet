@@ -3,7 +3,7 @@
   <head>
     <title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
     <%= stylesheet_link_tag "application","isotope"%>
-    <%= javascript_include_tag "application","isotope.selector.js"%>
+    <%= javascript_include_tag "application","isotope.selector.js","bootstrap-modal"%>
     <%= csrf_meta_tag %>
     <%= yield(:head) %>
   </head>
