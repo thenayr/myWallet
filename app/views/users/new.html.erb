@@ -1,5 +1,9 @@
+<% if logged_in? %>
+	<h1>Welcome <%= current_user.username %></h1>
+	<p>You are already logged in!</p>
+	<%= link_to "Log out", logout_path %>
+<% else %>
 <% title "Sign up" %>
-
-<p>Already have an account? <%= link_to "Log in", login_path %>.</p>
-
+<p>Already registered?<%= link_to "Log in", login_path %>
 <%= render 'form' %>
+<% end %>
