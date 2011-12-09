@@ -7,6 +7,9 @@ body {
 #container {
 	padding: 5px;
 }
+a#show_form {
+margin-top:8px;	
+}
 a {
 color: #0069D6;
 text-decoration: none;
