@@ -19,9 +19,14 @@ gem 'css3buttons', :git => 'git://github.com/johnrees/css3buttons_rails_helpers.
 group :assets do
   gem 'sass-rails',   '~> 3.1.5'
 end
+
+gem 'execjs'
+
 group :production do
-  gem 'pg'
+  gem 'therubyracer', '~> 0.9.3.beta1'
+  gem 'ps'
 end
+
 gem 'coffee-rails', '~> 3.1.1'
 gem 'uglifier', '>= 1.0.3'
 gem 'jquery-rails'
