@@ -1,0 +1,1 @@
+$(function(){var a=$("#deposits");a.isotope({itemSelector:".deposit"})})

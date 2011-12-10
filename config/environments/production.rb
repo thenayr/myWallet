@@ -4,6 +4,8 @@ MyWallet::Application.configure do
   # Code is not reloaded between requests
   config.cache_classes = true
   config.assets.precompile += ['isotope.css']
+  config.assets.precompile += ['isotope.selector.js']
+  config.assets.precompile += ['bootstrap-modal.js']
   # Full error reports are disabled and caching is turned on
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
