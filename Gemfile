@@ -4,8 +4,13 @@ gem 'rails', '3.1.3'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
-group :development do
+group :development, :test do
   gem 'sqlite3'
+end
+
+
+group :production do
+  gem 'pg'
 end
 
 gem 'json'
@@ -18,18 +23,10 @@ gem 'css3buttons', :git => 'git://github.com/johnrees/css3buttons_rails_helpers.
 # in production environments by default.
 group :assets do
   gem 'sass-rails',   '~> 3.1.5'
+  gem 'coffee-rails', '~> 3.1.1'
+  gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'execjs'
-
-group :production do
-  gem 'therubyracer', '~> 0.9.3.beta1'
-  gem 'ps'
-  gem 'pg'
-end
-
-gem 'coffee-rails', '~> 3.1.1'
-gem 'uglifier', '>= 1.0.3'
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
