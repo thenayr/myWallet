@@ -29,8 +29,8 @@
 			  	<a href="#" class="safe add icon button btn" data-controls-modal="modal_here" id="show_form" data-backdrop="true">Add a transaction</a>
 				<% end %>
 				<ul class="nav secondary-nav">
-				<li><a href="#">Total funds:</a></li>
 				<% if logged_in? %>
+				<li><a href="#">Total funds:</a></li>
 			    <li><%= link_to "Log out", logout_path %></li>
 			    <% else %>
 				<li><%= link_to "Log in", login_path %></li>
