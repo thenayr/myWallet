@@ -25,6 +25,7 @@ gem 'execjs'
 group :production do
   gem 'therubyracer', '~> 0.9.3.beta1'
   gem 'ps'
+  gem 'pg'
 end
 
 gem 'coffee-rails', '~> 3.1.1'
