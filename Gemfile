@@ -4,8 +4,9 @@ gem 'rails', '3.1.3'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
-
-gem 'sqlite3'
+group :development do
+  gem 'sqlite3'
+end
 
 gem 'json'
 
@@ -17,6 +18,9 @@ gem 'css3buttons', :git => 'git://github.com/johnrees/css3buttons_rails_helpers.
 # in production environments by default.
 group :assets do
   gem 'sass-rails',   '~> 3.1.5'
+end
+group :production do
+  gem 'pg'
 end
 gem 'coffee-rails', '~> 3.1.1'
 gem 'uglifier', '>= 1.0.3'
