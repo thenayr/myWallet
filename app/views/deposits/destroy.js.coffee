@@ -1,4 +1,3 @@
-
 destroyItems = $('#<%= dom_id(@deposit) %>')
 
 $("#deposits").isotope 'remove', destroyItems
